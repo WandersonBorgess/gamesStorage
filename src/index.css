@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  --background: #F8F8F8;
+  --primary: #4169E1;
+  --highlight: #87CEFA;
+  --panel: #FFFFFF;
+
+  --text-white: #FFFFFF;
+  --text-secondary: #7D7D7D;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+body, html, #root {
+  width: 100%;
+  min-height: 100%;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background);
+  display: flex;
+}
+
+p, h2 {
+  color: var(--text-secondary);
+}

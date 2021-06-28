@@ -1,0 +1,83 @@
+.container .card-product {
+  background-color: var(--panel);
+  width: 850px;
+  border-radius: 5px;
+  display: flex;
+  padding: 32px;
+  margin-right: 16px;
+}
+
+.container .card-product .img-content {
+ height:  250px;
+}
+
+.container .card-product h2 {
+  font-weight: normal;
+}
+
+.container .product-offer {
+  background-color: var(--panel);
+  flex: 1;
+  padding: 32px;
+}
+
+.container .product-offer button {
+  padding: 12px;
+  width: 100%;
+  border: 0;
+  background-color: var(--primary);
+  color: var(--text-white);
+  border-radius: 5px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container .product-offer button img {
+  height: 30px;
+  width: 30px;
+  margin-right: 8px;
+}
+
+.container .product-offer  span {
+  border: 0.5px solid var(--text-secondary);
+  width: 100%;
+  display: flex;
+  margin: 32px 0;
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  .container .content .card-product {
+    width: 650px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .content .card-product {
+    width: 450px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container .card-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .card-box .card-product {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .card-box .card-product {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
